@@ -1,0 +1,27 @@
+{
+  "name": "aws-rx",
+  "version": "0.1.0",
+  "description": "Aws utility functions in observable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "standard:check": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terryx/aws-rx.git"
+  },
+  "author": "Terry Yuen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terryx/aws-rx/issues"
+  },
+  "homepage": "https://github.com/terryx/aws-rx#readme",
+  "dependencies": {
+    "aws-sdk": "^2.150.0",
+    "rxjs": "^5.5.2"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
