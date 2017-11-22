@@ -25,7 +25,16 @@ const constructor = (spec) => {
     return Observable.fromPromise(sqs.deleteMessage(params).promise())
   }
 
-  return { sendMessage, receiveMessages, deleteMessage }
+  const purgeQueue = (params) => {
+    return Observable.fromPromise(sqs.purgeQueue(params).promise())
+  }
+
+  return {
+    sendMessage,
+    receiveMessages,
+    deleteMessage,
+    purgeQueue
+  }
 }
 
 module.exports = constructor
